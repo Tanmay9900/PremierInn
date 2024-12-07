@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="methods" thread-count="3">
+  <test name="Test">
+    <parameter name="browser" value="chrome"/> <!-- Specify Chrome -->
+    <classes>
+      <class name="com.premierinn.automation.testing.LoginTest">
+        <methods>
+          <include name="LoginTest1"/> <!-- The test method that uses DataProvider -->
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
+  
